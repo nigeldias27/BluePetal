@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=GFS+Didot&family=Source+Serif+Pro&family=Noto+Serif+TC&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +37,199 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media (max-width:720px) {
+  .navbar-nav{
+    position: absolute;
+    top:-50vh;
+    display: flex;
+    flex-direction: column;
+   }  
+}
+@media (min-width:720px) {
+.dir{
+  display: flex;
+  flex-direction: row;
+}
+.navbar-toggler{
+  position: absolute;
+  margin-top: -50vh;
+}
+}
+.nav-item{
+ margin-left: 20px;
+ margin-right: 20px; 
+}
+.opened{
+  margin-top:calc(50vh + 75px);
+  left:0px;
+  background-image: url('images/background.png');
+}
+
+#Heading{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: cover;
+  background-image: url(images/hotel.png);
+}
+#booknow{
+background-image: linear-gradient(to right,rgba(96,142,193),rgb(139,172,210));
+border-width: 0px;
+font-weight: 600;
+margin-top: 50px;
+}
+
+#Heading1{
+  display: flex;justify-content: center;flex-direction: column;
+align-items: center;}
+
+#location-card{
+  border-radius: 84px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+  height: 250px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(229,229,229);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+#location-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#location{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:720px){
+  #location{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+.card_overview{
+  border-radius: 84px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(229,229,229);
+  padding: 50px;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width:720px){
+  .gallery-mobile-begin{
+    height: 75vw;
+    padding: 0px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  
+  
+  .gallery-mobile-end{
+    height: 50vw;
+  }
+}
+@media (min-width:720px){
+  
+.gallery-mobile-begin{
+  height: calc(50vw + 25px);
+}
+.gallery-mobile-end{
+  height: 25vw;
+}
+}
+
+.no-display{
+  display: none;
+}
+
+p h1 h2 h3 h4 h5 h6 .inter{
+  font-family:'Inter';
+}
+
+html {
+  font-size: 1rem;
+}
+
+@media(max-width:576px) {
+  p h1 h2 h3 h4 h5 h6 {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:768px){
+  p h1 h2 h3 h4 h5 h6 {
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width:992px) {
+  p h1 h2 h3 h4 h5 h6 {
+    font-size: 1.6rem;
+  }
+}
+
+.center-room{
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp:hover{
+background-color: rgb(248,239,233);
+}
+.whatsapp{
+  background-color:rgb(98,186,69)
+}
+
+.contactus-border-radius{
+  border-radius: 15px 0px 0px 15px;
+}
+@media(max-width:720px){
+  .contactus-border-radius{
+    border-radius: 15px 15px 0px 0px;
+  } 
+}
+
+p{
+  font-family:'Noto Serif TC';
+}
+h1{
+  font-family:'Cormorant Garamond';font-weight:700;
+}
+
+a{
+  font-family:'Noto Serif TC';
+}
+button{
+  font-family:'Noto Serif TC';
+}
+input{
+  font-family:'Noto Serif TC';
+}
+
+textarea{
+  font-family:'Noto Serif TC';
+}
+
+.btn{
+  font-family:'Noto Serif TC';
 }
